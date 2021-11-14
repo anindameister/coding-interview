@@ -164,4 +164,7 @@ Remarks:
 - `database status now`
 ![database](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/databaseStatus.PNG)
 
+- `front-end now`
+
+![frontend](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/frontEnd.PNG)
 
