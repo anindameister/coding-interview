@@ -99,6 +99,14 @@ CREATE TABLE users_tickets(
     zendesk_id INTEGER,
     UNIQUE(user_id));
 ```
+- `query to pass data in the first table`
+```
+INSERT INTO users (id,email) VALUES(365435,'anindamaulik0@gmail.com') RETURNING *;
+```
+- `query to pass data in the second table`
+```
+INSERT INTO users_tickets(user_id,zendesk_id) VALUES((SELECT id FROM users),12345) RETURNING *;
+```
 
 ### Instructions
 - The challenge is on!
