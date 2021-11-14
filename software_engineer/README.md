@@ -144,3 +144,20 @@ Remarks:
 + Use functional programming when it is wise to do so
 + Use fetch()
 + Use airbnb stylesguides for [ES6](https://github.com/airbnb/javascript)
+
+#### Some snaps after server side work
+- `GET`
+![get](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/get.PNG)
+- `POST`
+![post](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/post.PNG)
+- `PUT`
+![put](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/put.PNG)
+- `PATCH`
+![patch](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/patch.PNG)
+- `DELETE`
+![delete](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/delete.PNG)
+
+- `database status now`
+![database](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/databaseStatus.PNG)
+
+
