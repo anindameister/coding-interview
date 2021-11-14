@@ -97,6 +97,7 @@ _user\_id is a foreign key of id_
 - Please complete your working solution within 7 days of receiving this challenge.
 - Please be as specific as possible in your answers!
 - You can use https://www.diagrams.net/, lucidchart or any online tool to present your ideas for the first part.
+![diagram](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/1.PNG)
 
 ### Submission instructions
 1. Fork this repository on github.
