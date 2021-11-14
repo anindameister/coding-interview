@@ -107,6 +107,11 @@ INSERT INTO users (id,email) VALUES(365435,'anindamaulik0@gmail.com') RETURNING 
 ```
 INSERT INTO users_tickets(user_id,zendesk_id) VALUES((SELECT id FROM users),12345) RETURNING *;
 ```
+- `join`
+```
+SELECT * FROM users
+JOIN users_tickets ON users.id=users_tickets.user_id;
+```
 
 ### Instructions
 - The challenge is on!
