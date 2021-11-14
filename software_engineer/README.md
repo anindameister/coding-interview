@@ -148,12 +148,16 @@ Remarks:
 #### Some snaps after server side work
 - `GET`
 ![get](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/get.PNG)
+
 - `POST`
 ![post](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/post.PNG)
+
 - `PUT`
 ![put](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/put.PNG)
+
 - `PATCH`
 ![patch](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/patch.PNG)
+
 - `DELETE`
 ![delete](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/delete.PNG)
 
