@@ -88,6 +88,26 @@ _tickets_
 
 _user\_id is a foreign key of id_
 
+```
+CREATE TABLE users_tickets(
+    users_id INTEGER NOT NULL PRIMARY KEY REFERENCES users (my_id),
+    UNIQUE(users_id)
+); 
+
+CREATE TABLE users(
+
+    my_id INTEGER NOT NULL PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    zendesk_ticket_id INTEGER,
+    priority VARCHAR(8) NOT NULL,
+    status VARCHAR(6) NOT NULL,
+    subject VARCHAR(255) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    created_at DATE NOT NULL 
+
+);
+```
+
 ### Instructions
 - The challenge is on!
 - Build a performant, **clean and well-structured solution**.
