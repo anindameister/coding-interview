@@ -112,6 +112,7 @@ INSERT INTO users_tickets(user_id,zendesk_id) VALUES((SELECT id FROM users),1234
 SELECT * FROM users
 JOIN users_tickets ON users.id=users_tickets.user_id;
 ```
+![result of join](https://github.com/anindameister/coding-interview/blob/master/software_engineer/photos/2.PNG)
 
 ### Instructions
 - The challenge is on!
