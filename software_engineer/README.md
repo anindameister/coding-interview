@@ -5,9 +5,33 @@ We run a SaaS platform for BtoB users. We use a service called Zendesk for them 
 
 ## 1. Concept
 1. Design a system that would enrich our users with their open issues on Zendesk on the most frequent basis assuming that we can retrieve and match their email from the source.
+- This is not very clear. Do I need to create a system that'll get open issues from Zendesk and store it on our database with email address?
+- So, I visited the website zendesk.com and found out that I need to have atleast a demo account to utilize their API in order to retrieve the issue tickets. 
+
 2. How would you provide additional data to the end-user such as the current status of the request? The data must be as "fresh" as possible from Zendesk.
+- Initially I would download the tickets from Zendesk to my local database.
+- Thereafter, create another table, called "Ticket Status", to update the current status of the ticket. Thus, with the advent of the table named "Ticket Status", we won't modify original ticket's data.
+```
+"Tickers"
+001 jhon technical issue 
+
+
+"Ticket Status"
+001  PENDING
+002 COMPLETED
+```
 3. How would you monitor that the service is running? How could you receive alerts when a user's number of tickets excesses 3 open tickets?
+- I can create an API end point, where the logic will run and also check the current status of the application , current request load, 
+completed request counts, incomplete or error_request counts , uptime and return these information as results. 
+- Also, i can create this server with a resilient client where the application will be handled by a process control management utility, that will automatically restart the server service if any problem occurs such as hanged request, service down status etc. 
+- OR
+- I can use one the existing NPM packege to monitor the server by issuing get request. 
+- Example. nodejs-health-checker is one of the health check npm pack which will do the job. 
+- We can create a service to count the number of tickets of a user when the user creates a ticket. If a ticket 
+exceed more than 3, we can push a message to a service panel using web socket. Thus the service team will be informed and the information can be stored to the database. 
 4. Every hour, we run a request to their service to host Zendesk statistics (average time before tickets resolution, most efficient agent...) in our database. Assuming that 1~3% of the requests to Zendesk will fail and respond with a 500 status, how do you make sure we always have 100% accurate data stored? Describe the whole process from the hourly job initiation.
+- Firstly , we can store the user ticket infomration to the local storage of the user. Afterwards, try to upload the data to the Zendesk. Even, if the response is 500, we can make the service to re-post the data later. 
+We can imporve the service by improving the balance overloading of the service with elastic computing. Thus, the service can handle many request without downtime. 
 
 ## 2. Code
 In a Node.js environnement (preferably Typescript) and using any library you want, create the API that would get a single user's tickets from our database enriched with the data provided by Zendesk. Here is the structure of the data available for a Zendesk ticket:
