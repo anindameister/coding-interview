@@ -63,12 +63,12 @@ Your database performs slower than usual. More specifically, your queries are ta
 
 ### Tech requirements
 - Node.js serverless infrastructure with functions timing out after 5 seconds
-`we need some cloud service providers for creating node.js serverless infrastructure.`
+- `we need some cloud service providers for creating node.js serverless infrastructure.`
 - **Test your code**
 - Use only Postgres SQL Database
 - Typescript is a plus
 - You can consider changing anything from the database schema to the infrastructure, create micro-services, subscribe to new tools...
-`so it is mentioned that I shouldn't spend for more than 4 hours, but, is it expected out of me to create front&backend dockerised application?`
+- `so it is mentioned that I shouldn't spend for more than 4 hours, but, is it expected out of me to create front&backend dockerised application?`
 
 **SQL database structure:**
 
