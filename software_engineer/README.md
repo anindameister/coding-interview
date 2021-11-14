@@ -88,6 +88,7 @@ _tickets_
 
 _user\_id is a foreign key of id_
 
+- `Note:` we cannot use uuid_v4 because in this scenario, we have got to send the uuid_v4 function which would help in generating random id, everytime. User id cannot change everytime.
 ```
 CREATE TABLE users(
     id INTEGER NOT NULL PRIMARY KEY,
